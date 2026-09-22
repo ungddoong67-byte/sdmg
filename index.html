@@ -157,6 +157,7 @@
       
         <div class="section local_area">
             <h3>📦 서대문구퀵서비스 맞춤 운송 차종 안내</h3>
+          <p>충정로 합동 미근동 냉천동 천연동 옥천동 영천동 현저동 북아현동 홍제동 대현동 대신동 신촌동 봉원동 창천동 연희동 홍은동 북가좌동 남가좌동 충현동 신촌 연대 이대 독립문 인왕시장 서대문 서대문구 전지역</p>
             <ul>
                 <li>🏍️ 서대문구오토바이퀵 : 서류 및 긴급 소형 화물 최우선 신속한 배송</li>
                 <li>🚙 서대문구다마스퀵 : 날씨 영향 없는 중소형 짐 및 기업 소화물 안심 수송</li>
@@ -254,5 +255,28 @@
       </footer>
    </div>
 </div>
+    <script>
+  // 마우스 우클릭 차단
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 드래그 차단
+  document.addEventListener('dragstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 텍스트 선택(블록 지정) 차단
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 복사 키(Ctrl+C / Cmd+C) 차단
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
